@@ -1,0 +1,154 @@
+{
+  "settings": {
+    "name": "Uniswap Exchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#191923"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/uniswap-logo.png",
+    "mbrsiteDomain": "0bts8etbg0",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Uniswap Exchangė - Přovides users with liquidity Pools.",
+        "meta_descr": "PROTOCOL. Swap, earn, and build on the leading decentralized crypto trading protocol. Launch App. $489B+. Trade Volume.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#191923\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/uniswap-org.png\" alt=\"Uniswap Exchange\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tbxv1Jyawv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Uniswap Exchange - Earn &amp; Build Crypto - Swap</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Uniswap Exchange is a decentralized crypto exchanging convention that has been created to trade, procure, and construct crypto tokens. This trade has the most noteworthy $985B+ exchange volume with the information of 97M+ all-time exchange. You can trade a wide range of cryptographic forms of money utilizing this trade at the least gas expenses. You can undoubtedly trade ERC-20 tokens and you don't have to enroll for a record on this trade. Uniswap trade is an easy to understand crypto wallet and you can without much of a stretch procure interest by marking cryptos. You can without much of a stretch connection a crypto wallet to your Uniswap Exchange. Uniswap likewise can be utilized to store crypto in a liquidity pool. Here on this page, we are examining the method for trading, acquire and fabricate the crypto cycle in the following segments of this post.\n<br>Yet, prior to continuing on toward the following cycles, you really want to ensure that your PC has a legitimate web association and you recall the secret key or seed express subtleties as you will require them to interface your wallet with Uniswap trade. Thus, in the event that you are can't say much about how to utilize Uniswap trade then you want to allude to the following segments of this post.\n<br>\n<br>How To Access Uniswap Exchange App?\n<br>\n<br>Uniswap trade application can be gotten to on a PC. You don't have to download or introduce it independently on your gadget. On the off chance that you make certain about the method for getting to the Uniswap trade, you really want to follow the means that are given beneath:\n<br>\n<br>On your Mac or Windows, send off a refreshed internet browser\n<br>Presently, you want to visit the Uniswap.org site page\n<br>On this page, you will find a 'Send off applications' button\n<br>Click on it to send off the Uniswap trade application\n<br>\n<br>In the wake of moving toward the above advances, you will actually want to get to Uniswap trade applications.\n<br>\n<br>How To Create A Proposal On Uniswap V2 Exchange?\n<br>\n<br>You can make a proposition on Uniswap in the event that you are hoping to move a token or endorse a token. The straightforward advances that will allow you to make a proposition on Uniswap trade are given beneath:\n<br>\n<br>On your PC, open a program to visit the Uniswap.org page\n<br>Here, click on the 'Send off applications' button to move to the following page\n<br>Presently, you really want to tap on the 'Vote' choice from the tab\n<br>From that point forward, find and snap on the 'Make Proposal' choice\n<br>Presently, pick the proposition point and afterward top off other required subtleties\n<br>Then, click on the 'Submit' button to make your proposition on the Uniswap trade\n<br>\n<br>WAY TO UNISWAP LOGIN\n<br>\n<br>Uniswap trade doesn't request that you register for a record on it. You can exchange on this trade without going through the sign-up and join process. Clients don't have to set up a Uniswap login record to purchase, trade, and procure cryptos on this trade. In the event that you are hoping to associate a wallet on Uniswap, you might be approached to give the secret key or confidential key subtleties of your crypto wallet.\n<br>\n<br>THE STEPS FOR UNISWAP EXCHANGE APP DOWNLOAD\n<br>\n<br>There isn't any authority versatile or work area application from Uniswap. Nonetheless, you can utilize outsider applications to exchange on Uniswap utilizing your portable. To get an outsider Uniswap application, you follow these means:\n<br>\n<br>Open a refreshed program on your portable\n<br>Presently, click on this https://apkresult.com/en/uniswap-application apk connect\n<br>Here, find and tap on the 'Download' button to continue\n<br>From that point onward, you really want to get to the arrangement record and follow the establishment prompts to wrap up\n<br>In the wake of going through the above advances, you will actually want to utilize the Uniswap application on your versatile application. Ensure that your gadget has authorization to introduce an application from obscure sources.\n<br>\n<br>Uniswap Exchange Review\n<br>\n<br>Uniswap is a most remarkable decentralized trade to trade, procure, and construct cryptos. Whether you have traded Ethereum or some other crypto token that has been created on this trade, you can do with such ease and rapidly. You can undoubtedly interface a crypto wallet and afterward trade tokens by paying gas expenses. This trade is one of the most gotten crypto trades. This exchanging convention has a basic and more straightforward UI that makes it simple to utilize and store cryptos in the liquidity pool. A portion of the upsides and downsides of Uniswap trade are as per the following:\n<br>\n<br>Professionals\n<br>\n<br>It permits you to trade ERC-20 tokens\n<br>Uniswap has an easy to understand plan\n<br>You can acquire interest by marking crypto\n<br>There is no enrollment expected to exchange\n<br>It upholds crypto wallet\n<br>\n<br>Cons\n<br>\n<br>You are not permitted to utilize government issued currency\n<br>The gas expense is high contrasted with others\n<br>There is the gamble of the temporary loss of Uniswap trade\n<br>Clients are not approached to finish KYC\n<br>\n<br>How To Use Or Swap Tokens On Uniswap?\n<br>\n<br>Uniswap V3 permits you to trade tokens on it by interfacing the wallet. In the event that you are don't know about the method for utilizing or trade tokens on Uniswap then you want to follow the means that are given beneath:\n<br>\n<br>Open a program on your Uniswap trade\n<br>Presently, you want to get to the 'Send off Apps' choice\n<br>From that point forward, click on the 'Trade' button to continue\n<br>Presently, you want to pick the crypto token that you need to trade\n<br>From that point onward, click the 'Interface Wallet' button to continue\n<br>Here on this page, you are approached to type the secret word of the wallet\n<br>You can likewise utilize the confidential key subtleties to get to the wallet\n<br>At last, click on the 'Interface' button to trade tokens\n<br>\n<br>End\n<br>\n<br>To summarize, clients who are hoping to trade, acquire, or fabricate cryptos on Uniswap trade can undoubtedly do as such with the assistance of the strategy that we have presented above on this page. Make a point to keep your Windows or Mac associated with the web to keep away from association issues. You are additionally proposed to utilize the right secret key or seed express subtleties to associate your crypto wallet on the Uniswap trade Google.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tbxv2FhrK9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
